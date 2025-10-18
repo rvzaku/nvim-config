@@ -1,0 +1,39 @@
+# Ignore lazy.nvim plugin directory
+lazy-lock.json
+
+# Ignore Mason installations
+.mason/
+
+# Ignore LSP and DAP logs
+lsp.log
+dap.log
+
+# Ignore spell files
+*.spl
+*.sug
+
+# Ignore undo history
+*.un~
+
+# Ignore swap files
+*.swp
+*.swo
+*.swn
+
+# Ignore session files
+Session.vim
+*.vim
+
+# Ignore netrw history
+.netrwhist
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*~
+*.tmp
+
+# Ignore compiled Lua
+*.luac
