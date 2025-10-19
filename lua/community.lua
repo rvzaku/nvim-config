@@ -1,11 +1,11 @@
--- ============================================================================
--- LUA/COMMUNITY.LUA - AstroCommunity Plugin Imports
+--==============================================
+-- LUA/COMMUNITY.LUA - AstroCommunity Imports (Standard Practice)
 -- ============================================================================
 
 return {
   "AstroNvim/astrocommunity",
 
-  -- Language Packs (minimal set for core languages)
+  -- === LANGUAGE PACKS (Essential) ===
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.typescript" },
@@ -18,25 +18,30 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.docker" },
 
-  -- Colorschemes (optional alternatives)
+  -- === COLORSCHEMES (Options) ===
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.gruvbox-nvim" },
 
-  -- Git integration
+  -- === GIT INTEGRATION ===
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.git.neogit" },
 
-  -- Motion and editing
+  -- === MOTION & EDITING ===
   { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
-  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.nvim-regexplainer" },
 
-  -- Code assistance
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" }, -- Remove if no Copilot
+  -- === CODE ASSISTANCE ===
+  --{ import = "astrocommunity.completion.copilot-lua-cmp" }, -- Remove if no Copilot
 
-  -- Utility
-  { import = "astrocommunity.utility.noice-nvim" }, -- Enhanced UI
+  -- === UTILITY ===
+  { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
+  { import = "astrocommunity.indent.indent-blankline-nvim" },
+
+  -- === DIAGNOSTICS ===
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
